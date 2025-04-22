@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Whack-a-Mole Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="#game-section">Game</a></li>
+      <li><a href="#info-section">Info</a></li>
+    </ul>
+  </nav>
+
+  <!-- Section 1: Game -->
+  <section id="game-section" class="section">
+    <h2 class="center">Whack-a-Mole</h2>
+    <div class="game-container">
+      <div class="scoreboard">
+        <p>Score: <span id="score">0</span></p>
+        <button id="start-btn">Start Game</button>
+        <button id="stop-btn">Stop Game</button> <!-- Stop Game Button -->
+      </div>
+      <div class="grid">
+        <!-- 9 Holes -->
+        <div class="hole" id="hole1"></div>
+        <div class="hole" id="hole2"></div>
+        <div class="hole" id="hole3"></div>
+        <div class="hole" id="hole4"></div>
+        <div class="hole" id="hole5"></div>
+        <div class="hole" id="hole6"></div>
+        <div class="hole" id="hole7"></div>
+        <div class="hole" id="hole8"></div>
+        <div class="hole" id="hole9"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 2: Info -->
+  <section id="info-section" class="section">
+    <h2 class="center">About This Game</h2>
+    <p>
+      The Whack-a-Mole game is a fun, interactive web game where moles pop up randomly, and the player must click them to earn points.
+    </p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
