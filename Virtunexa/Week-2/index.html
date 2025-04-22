@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Multi-Step Form</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="#form-section">Form</a></li>
+      <li><a href="#info-section">Info</a></li>
+    </ul>
+  </nav>
+
+  <!-- Section 1: Multi-Step Form -->
+  <section id="form-section" class="section">
+    <h2>Job Application</h2>
+    <form id="multiStepForm">
+      <!-- Step 1 -->
+      <div class="form-step active">
+        <label>Name: <input type="text" id="name" required /></label>
+        <label>Email: <input type="email" id="email" required /></label>
+        <button type="button" class="next-btn">Next</button>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="form-step">
+        <label>Upload Resume: <input type="file" id="resume" required /></label>
+        <label>Cover Letter: <textarea id="coverLetter" required></textarea></label>
+
+        <!-- ✅ Updated buttons with spacing -->
+        <div class="btn-group">
+          <button type="button" class="prev-btn">Previous</button>
+          <button type="submit" class="submit-btn">Submit</button>
+        </div>
+      </div>
+    </form>
+
+    <!-- Progress Indicators -->
+    <div class="progress-indicator">
+      <span class="step-indicator active">1</span>
+      <span class="step-indicator">2</span>
+    </div>
+  </section>
+
+  <!-- Section 2: Information -->
+  <section id="info-section" class="section">
+    <h2>About This Application</h2>
+    <p>This dynamic multi-step form collects job application data. It features client-side validation and responsive design.</p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
